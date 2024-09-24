@@ -17,3 +17,4 @@ dig_3 = (int(user_number) % 1000) // 100
 dig_4 = (int(user_number) % 10000) // 1000
 dig_5 = (int(user_number) % 100000) // 10000
 print(dig_1, dig_2, dig_3, dig_4, dig_5)
+
