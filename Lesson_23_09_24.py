@@ -25,63 +25,24 @@ while True:
         break
 
 ########## Задание 3.2 ##########
-# Условие №1
-some_list_1 = [12, 3, 4, 10]
-last_el = some_list_1.pop()
-some_list_1.insert(0, last_el)
-print(some_list_1)
-# Условие №2
-some_list_2 = [1]
-last_el = some_list_2.pop()
-some_list_2.insert(0, last_el)
-print(some_list_2)
-# Условие №3
-some_list_3 = []
-if some_list_3:
-    last_el = some_list_3.pop()
-    some_list_3.insert(0, last_el)
-    print(some_list_3)
-else:
-    print(some_list_3)
-# Условие №4
-some_list_4 = [12, 3, 4, 10, 8]
-last_el = some_list_4.pop()
-some_list_4.insert(0, last_el)
-print(some_list_4)
 
+some_list = [12,3,4,8,10]
+if some_list:
+    last_el = some_list.pop()
+    some_list.insert(0, last_el)
+    print(some_list)
+else:
+    print(some_list)
 
 ########## Задание 3.3 ##########
-# Условие №1
-some_list_1 = [1,2,3,4,5,6]
-new_list_1 = some_list_1[0:3]
-new_list_2 = some_list_1[3:6]
-new_list_3 = [new_list_1, new_list_2]
-print(new_list_3)
-# Условие №2
-some_list_1 = [1,2,3]
-new_list_1 = some_list_1[0:2]
-new_list_2 = some_list_1[2:3]
-new_list_3 = [new_list_1, new_list_2]
-print(new_list_3)
-# Условие №3
+
 some_list_1 = [1,2,3,4,5]
-new_list_1 = some_list_1[0:3]
-new_list_2 = some_list_1[3:5]
-new_list_3 = [new_list_1, new_list_2]
-print(new_list_3)
-# Условие №4
-some_list_1 = [1]
-new_list_1 = some_list_1[0]
-new_list_2 = []
-new_list_3 = [new_list_1, new_list_2]
-print(new_list_3)
-# Условие №5
-some_list_1 = []
 if some_list_1:
+    mid_of_list = (len(some_list_1) + 1) // 2
+    new_list_1 = some_list_1[:mid_of_list]
+    new_list_2 = some_list_1[mid_of_list:]
+else:
     new_list_1 = some_list_1
     new_list_2 = []
-else:
-    new_list_1 = []
-    new_list_2 = []
-new_list_3 = [new_list_1, new_list_2]
+new_list_3 = (new_list_1, new_list_2)
 print(new_list_3)
