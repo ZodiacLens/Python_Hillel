@@ -1,0 +1,27 @@
+# ########## Задание 4.1 ##########
+
+# user_list = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+# zero_index = 0
+# zero_count = user_list.count(0)
+# while zero_index < zero_count:
+#     find_zero = user_list.index(0)
+#     remove_element = user_list.pop(find_zero)
+#     user_list.append(remove_element)
+#     zero_index += 1
+# print(user_list)
+
+# ########## Задание 4.2 ##########
+
+# user_list = [1, 3, 5]
+# if user_list:
+#     even_list_sum = sum(user_list [::2])
+#     final_result = user_list[-1] * even_list_sum
+#     print(final_result)
+# else:
+#     print(user_list)
+
+# ########## Задание 4.3 ##########
+
+# user_list = [6, 3, 7]
+# new_list = [user_list[0], user_list[2],  user_list[-2]]
+# print(new_list)
