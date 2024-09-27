@@ -38,7 +38,7 @@
 # ########## Задание 4.1.5 ##########
 
 # user_list = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
-# user_list.sort(key=lambda x: x!=0,reverse=True)
+# user_list.sort(key=bool,reverse=True)
 # print(user_list)
 
 # ########## Задание 4.2 ##########
