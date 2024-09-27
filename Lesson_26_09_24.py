@@ -27,6 +27,14 @@
 # user_list.extend([0] * zero_count)
 # print(user_list)
 
+# ########## Задание 4.1.4 ##########
+
+# user_list = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+# zero_count = user_list.count(0)
+# user_list = [dig for dig in user_list if dig != 0]
+# user_list.extend([0] * zero_count)
+# print(user_list)
+
 # ########## Задание 4.2 ##########
 
 # user_list = [1, 3, 5]
