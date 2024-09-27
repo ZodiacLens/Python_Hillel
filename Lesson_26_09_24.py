@@ -10,6 +10,14 @@
 #     zero_index += 1
 # print(user_list)
 
+# ########## Задание 4.1.2 ##########
+
+# user_list = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+# for _ in range(user_list.count(0)):
+#     user_list.remove(0)
+#     user_list.append(0)
+# print(user_list)
+
 # ########## Задание 4.2 ##########
 
 # user_list = [1, 3, 5]
