@@ -1,26 +1,26 @@
 #  ########## Задание 5.1 ##########
 
+# import keyword
 # while True:
 #     user_value = input("Введите имя переменной: ")
-#     import string
-#     import keyword
-#     if user_value[0].isdigit():
-#         print("Переменная начинается с цифры")
-#     elif user_value in keyword.kwlist:
+#     user_value_valid = True
+#     if not user_value.isidentifier():
+#         print("Переменная состоит из недопустимых символов или содержит пробелы.")
+#         user_value_valid = False
+#     if user_value in keyword.kwlist:
 #         print("Переменная является зарезервированным словом")
-#     elif all(symbol == "_" for symbol in user_value) and len(user_value) > 1:
-#         print("Переменная является некорректной, более чем 1 '_'")
-#     elif any(symbol.isupper() for symbol in user_value):
-#          print("Переменная содержит заглавную букву")
-#     elif any(symbol in string.punctuation and symbol != '_' for symbol in user_value):
-#         print("Переменная состоит из недопустимых символов")
-#     elif any(symbol.isspace() for symbol in user_value):
-#         print("Переменная содержит пробел")
-#     else:
+#         user_value_valid = False
+#     if user_value.count('_') > 1 and all(symbol == "_" for symbol in user_value):
+#         print("Переменная является некорректной: состоит только из символов подчеркивания")
+#         user_value_valid = False
+#     if any(symbol.isupper() for symbol in user_value):
+#         print("Переменная содержит заглавную букву")
+#         user_value_valid = False
+#     if user_value_valid:
 #         print("Переменная корректна")
-#     exit_the_program = input("Для окончания прверки напишите -exit-, для следующей нажмите -Enter- ")
+#     exit_the_program = input("Для окончания проверки напишите -exit-, для следующей нажмите -Enter- ")
 #     if exit_the_program == "exit":
-#             break
+#         break
 
 #  ########## Задание 5.2 ##########
 
@@ -67,7 +67,20 @@
 # user_final_comment = "#" + clean_punct[:140].title().replace(" ", "")
 # print(user_final_comment)
 
+#  ########## Задание 5.3.1 ##########
+
+# user_comment = "Should, I. subscribe? Yes!"
+# clean_punct = user_comment.translate(str.maketrans("", "", ".,!?;:'\""))
+# user_final_comment = "#" + clean_punct[:140].replace(" ", "").title()
+# print(user_final_comment)
+
+
 #  ########## Доп. ##########
 
 # import caesar
 # print(caesar)
+
+
+
+
+
