@@ -1,4 +1,5 @@
 #  ########## Задание 5.1 ##########
+
 # while True:
 #     user_value = input("Введите имя переменной: ")
 #     import string
@@ -22,6 +23,7 @@
 #             break
 
 #  ########## Задание 5.2 ##########
+
 # while True:
 #     while True:
 #         try:
@@ -66,5 +68,6 @@
 # print(user_final_comment)
 
 #  ########## Доп. ##########
+
 # import caesar
 # print(caesar)
