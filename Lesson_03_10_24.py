@@ -54,7 +54,6 @@
 #     if exit_the_program == "exit":
 #         break
 
-
 ########## Задание 6.3 ##########
 
 # from functools import reduce
