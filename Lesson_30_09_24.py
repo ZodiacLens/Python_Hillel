@@ -55,9 +55,9 @@
 #             result = user_digit_1 / user_digit_2
 #         break
 #     print("Результат: ", result)
-#     exit_the_program = input("Для продолжения расчсётов напишите 'yes': ")
-#     if exit_the_program != "yes":
-#         break
+    #     exit_the_program = input("Для продолжения расчсётов напишите 'yes': ")
+    #     if exit_the_program != "yes":
+    #         break
 
 #  ########## Задание 5.3 ##########
 
