@@ -1,13 +1,14 @@
 # ########## Задание 7.1 ##########
 #
 # def say_hi(name, age):
-#   say_hi = f"Hi. My name is {name} and I'm {age} years old"
-#   return say_hi
+#     say_hi = f"Hi. My name is {name} and I'm {age} years old"
+#     return say_hi
+#
 #
 # assert say_hi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old", 'Test1'
 # assert say_hi("Frank", 68) == "Hi. My name is Frank and I'm 68 years old", 'Test2'
 # print('ОК')
-#
+# #
 # ######### Задание 7.2 ##########
 #
 # def correct_sentence(text):
@@ -15,6 +16,7 @@
 #     if not text.endswith("."):
 #         text += "."
 #     return text
+#
 #
 # assert correct_sentence("greetings, friends") == "Greetings, friends.", 'Test1'
 # assert correct_sentence("hello") == "Hello.", 'Test2'
