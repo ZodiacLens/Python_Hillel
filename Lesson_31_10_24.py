@@ -28,25 +28,27 @@
 #
 #     def __init__(self, number):
 #         self.number = number
-#         self.group = []
+#         self.group = {}
 #
 #     def add_student(self, student):
-#         self.group.append(student)
+#         self.group[student.record_book] = student
 #
 #     def delete_student(self, last_name):
-#         student_name = self.find_student(last_name)
-#         if student_name:
-#             self.group.remove(student_name)
+#         for record_book, student in list(self.group.items()):
+#             if student.last_name == last_name:
+#                 del self.group[record_book]
+#                 return student
+#         return None
 #
 #     def find_student(self, last_name):
-#         for student in self.group:
+#         for student in self.group.values():
 #             if student.last_name == last_name:
 #                 return student
 #         return None
 #
 #     def __str__(self):
-#         all_students = '\n'.join(str(student) for student in self.group)
-#         return f'Number:{self.number}\n{all_students} '
+#         all_students = '\n'.join(str(student) for student in self.group.values())
+#         return f'Number: {self.number}\n{all_students}'
 #
 #
 # st1 = Student('Male', 30, 'Steve', 'Jobs', 'AN142')
